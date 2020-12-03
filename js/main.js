@@ -1,7 +1,7 @@
 const car1 = document.querySelector('.car-1');
 const car2 = document.querySelector('.car-2');
 
-const models = ['bwm', 'ferrari', 'lambo', 'moscvich', 'tesla'];
+const models = ['bmw', 'ferrari', 'lambo', 'moscvich', 'tesla'];
 const windowWidth = innerWidth;
 const carWidth = 150;
 const finishWidth = 40;
@@ -24,7 +24,7 @@ car2.style.left = car2Position;
 
 addEventListener('keyup', event => {
     const key = event.key;
-    if (key === 'w') {
+    if (key ==='w') {
         car1Position += carStep;
         car1.style.left = car1Position + 'px';
         if (car1Position > finishPosition) {
@@ -32,6 +32,7 @@ addEventListener('keyup', event => {
             location.reload();
         }
     }
+
     if (key === 'p') {
         car2Position += carStep;
         car2.style.left = car2Position + 'px';
